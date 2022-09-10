@@ -1,0 +1,228 @@
+/* Variables */
+:root {
+    --hd-clr-1: #dba431;
+    --hd-clr-2: #ffffff;
+    --hd-txt-1: #0D4B4A;
+    --bg-clr-1: #dfd3a5;
+    --bg-clr-2: #e8e7e3;
+    --fot-clr-1: #e0b454;
+    --trans: all 0.25s ease-in-out;
+    --nav1-h: 50px;
+    --nav2-h: 80px;
+}
+
+/* global styles */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bd {
+    border: 1px solid #000;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+*{
+    transition: var(--trans);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-clr-2);
+    color: var(--hd-txt-1);
+
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* MY STYLES */
+
+nav{
+    color: var(--hd-txt-1);
+    color: red;
+    position: relative;
+    position: sticky;
+    top: -46px;
+    /* overflow: hidden; */
+
+
+
+}
+
+.nav1 {
+    background-color: var(--hd-clr-1);
+    width: 100vw;
+    height: var(--nav1-h);
+    color: var(--hd-txt-1);
+    position: relative;
+    z-index: 20;
+}
+
+.nav1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav1-h);
+}
+.nav1 .container a {
+    color: var(--hd-txt-1);
+    font-size: 1rem;
+    line-height: var(--nav1-h);
+    padding: 0 5px;
+}
+
+.nav1 .container .social {
+    color: var(--hd-txt-1);
+    height: 100%;
+    vertical-align: middle;
+    line-height: var(--nav1-h);
+}
+
+.nav1 .container .social a {
+    color: var(--hd-txt-1);
+    padding: 0 20px;
+    display: inline-block;
+    background-color: #e8e7e300;
+}
+.nav1 .container .social a:hover,
+.nav1 .container a:hover
+{
+    background-color: var(--bg-clr-2);
+}
+
+.nav2{
+    color: var(--hd-txt-1);
+    background-color: var(--hd-clr-2);
+    width: 100vw;
+    height: var(--nav2-h);
+    position: sticky;
+    top: 0px;
+}
+.nav2 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2 .container .logoCont{
+    height: var(--nav2-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+    padding-left: 20px;
+}
+.nav2 .container .logoCont img{
+    width: 100px;
+    translate: 0 60%;
+}
+.nav2 .container .logoCont:hover {
+    translate: 0 -7%;
+    transition: 1s ease-in-out !important;
+
+}
+img[src="img/text.png"]{
+    width: 60px !important;
+    margin-top: 20px;
+    padding-right: 5px;
+}
+
+
+.nav2 .container .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2 .container .links a{
+    border-bottom: 3px solid transparent;
+    color: var(--hd-txt-1);
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: var(--nav2-h);
+    padding: 0 1rem;
+}
+.nav2 .container .links a:hover{
+    background-color: var(--bg-clr-2);
+    border-bottom: 2px solid var(--hd-clr-1);
+    translate: 0 -2%;
+}
+
+
+
+main{
+    /* border: 1px solid #000; */
+    min-height: calc( 100vh - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main h1{
+    color: var(--hd-txt-1);
+    font-size: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+}
+main .mainCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+
+}
+main .mainCont img{
+max-height: 50vh;
+}
+img[src="img/main1.png"]{
+    
+}
+img[src="img/main2.png"]{
+    max-height: 80vh !important;
+}
+img[src="img/main3.png"]{
+/* width: 20px; */
+}

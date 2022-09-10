@@ -190,8 +190,11 @@ img[src="img/text.png"]{
 }
 
 
-
 main{
+    overflow: hidden;
+    /* width: 50%; */
+}
+main .container{
     /* border: 1px solid #000; */
     min-height: calc( 100vh - 130px);
     display: flex;
@@ -215,7 +218,7 @@ main .mainCont{
 
 }
 main .mainCont img{
-max-height: 50vh;
+max-height: 60vh;
 }
 img[src="img/main1.png"]{
     

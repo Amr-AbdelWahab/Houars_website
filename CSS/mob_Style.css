@@ -13,10 +13,32 @@
         width: 95vw;
         padding: 0;
     }
+
+
+    nav{
+        top: -26px;
+    }
     .nav1 .container .social a {
         margin: 0 ;
         padding: 0 5px;
     }
+    a[href="mailto:info@hours.com"]{
+
+    }
+
+    .nav2 .container .logoCont img{
+        width: 70px;
+        translate: 0 60%;
+    }
+    img[src="img/text.png"]{
+        width: 60px !important;
+        margin-top: 10px;
+        padding-right: 5px;
+    }
+    
+    
+
+
     .nav2 .links{
         display: none !important;
         flex-direction: column;
@@ -67,6 +89,20 @@
     .ham.active span:nth-child(3){ 
         rotate: -45deg;
         top: 27% !important;
+    }
+
+
+
+    main h1{
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+    main .mainCont{
+        flex-direction: column;
+        width: 100%;
+    }
+    main .mainCont img{
+        width: 70%;
     }
 
 }

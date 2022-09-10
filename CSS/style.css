@@ -211,7 +211,7 @@ main .mainCont{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 
 }
 main .mainCont img{
